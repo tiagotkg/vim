@@ -53,7 +53,8 @@ filetype plugin indent on    " required
 
 
 " General
-
+set clipboard=unnamedplus " ctrlc + ctrlv rules
+set encoding=utf-8
 set t_Co=256
 set number	" Show line numbers
 set showbreak=++++	" Wrap-broken line prefix
@@ -90,7 +91,7 @@ colorscheme solarized
 " Vim airline config
 let g:airline_theme='solarized'
 let g:airline_solarized_bg='dark'
-let g:airline_powerline_fonts = 1
+let g:airline_powerline_fonts =1
 
 
 "Vim ctrlp config
