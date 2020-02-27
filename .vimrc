@@ -17,11 +17,16 @@ Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'scrooloose/nerdtree'
-Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'mattn/emmet-vim'
 Plugin 'ap/vim-css-color'
 Plugin 'valloric/youcompleteme'
 Plugin 'jiangmiao/auto-pairs'
+Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'scrooloose/syntastic'
+Plugin 'nathanaelkane/vim-indent-guides'
+
 
 
 
@@ -51,7 +56,7 @@ filetype plugin indent on    " required
 
 set t_Co=256
 set number	" Show line numbers
-set showbreak=+++	" Wrap-broken line prefix
+set showbreak=++++	" Wrap-broken line prefix
 " set textwidth=100	" Line wrap (number of cols)
 set showmatch	" Highlight matching brace
 set spell	" Enable spell-checking
@@ -81,4 +86,12 @@ let g:solarized_termcolors=256
 let g:solarized_termtrans=1
 set background=dark
 colorscheme solarized
-set t_vb=
+
+" Vim airline config
+let g:airline_theme='solarized'
+let g:airline_solarized_bg='dark'
+let g:airline_powerline_fonts = 1
+
+
+"Vim ctrlp config
+let g:ctrlp_mruf_case_sensitive = 1
